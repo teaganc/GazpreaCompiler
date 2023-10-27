@@ -1,0 +1,59 @@
+typedef integer x;
+typedef x y;
+typedef y z;
+typedef integer[1] x1;
+typedef x1 y1;
+typedef y1 vz;
+
+typedef integer[1, 1] x2;
+typedef x2 y2;
+typedef y2 mz;
+
+procedure main() returns integer {
+    // scalar typedef
+    x i = 1;
+    y i2 = 2;
+    z i3 = 3;
+    const z i4 = 4;
+    var z i5 = 5;
+    z z = 6;
+
+    // vector typedef
+    x1 vi = [1];
+    y1 vi2 = [2];
+    vz vi3 = [3];
+    const vz vi4 = [4];
+    var vz vi5 = [5];
+    vz vz = [6];
+
+    // matrix typedef
+    x2 mi = [[1]];
+    y2 mi2 = [[2]];
+    mz mi3 = [[3]];
+    const mz mi4 = [[4]];
+    var mz mi5 = [[5]];
+    mz mz = [[6]];
+
+    i -> std_output; ' ' -> std_output;
+    i2 -> std_output; ' ' -> std_output;
+    i3 -> std_output; ' ' -> std_output;
+    i4 -> std_output; ' ' -> std_output;
+    i5 -> std_output; ' ' -> std_output;
+    z -> std_output; '\n' -> std_output;
+
+    vi -> std_output; ' ' -> std_output;
+    vi2 -> std_output; ' ' -> std_output;
+    vi3 -> std_output; ' ' -> std_output;
+    vi4 -> std_output; ' ' -> std_output;
+    vi5 -> std_output; ' ' -> std_output;
+    vz -> std_output; '\n' -> std_output;
+
+    mi -> std_output; ' ' -> std_output;
+    mi2 -> std_output; ' ' -> std_output;
+    mi3 -> std_output; ' ' -> std_output;
+    mi4 -> std_output; ' ' -> std_output;
+    mi5 -> std_output; ' ' -> std_output;
+    mz -> std_output; '\n' -> std_output;
+    
+    return 0;
+}

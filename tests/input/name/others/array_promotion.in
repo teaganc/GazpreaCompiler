@@ -1,0 +1,14 @@
+procedure main() returns integer {
+  integer[*] s = 1 + [1, 2];
+  integer[*, *] s1 = 1 + [[1], [2]];
+  integer[5] s2 = 2..6;
+  string s3 = "hello" || [' ', 't', 'h', 'e', '\n'];
+  character[*] s4 = "eeeee";
+
+  s -> std_output; ' ' -> std_output;
+  s1 -> std_output; ' ' -> std_output;
+  s2 -> std_output; ' ' -> std_output;
+  s3 -> std_output; ' ' -> std_output;
+  s4 -> std_output; '\n' -> std_output;
+  return 0;
+}

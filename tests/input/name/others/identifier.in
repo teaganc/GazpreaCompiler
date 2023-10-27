@@ -1,0 +1,7 @@
+procedure main() returns integer {
+  // identifier names
+  integer _wow;
+  real Wow;
+  boolean _eeeee2;
+  return 0;
+}

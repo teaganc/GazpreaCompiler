@@ -1,0 +1,15 @@
+// scalar
+const integer i = 0;
+const real f = 1.2;
+const boolean b = true;
+const character c = 'r';
+const integer i2 = 0 + i;
+
+procedure main() returns integer {
+    i -> std_output;' ' -> std_output;
+    f -> std_output;' ' -> std_output;
+    b -> std_output;' ' -> std_output;
+    c -> std_output;' ' -> std_output;
+    i2 -> std_output; '\n' -> std_output;
+    return 0;
+}

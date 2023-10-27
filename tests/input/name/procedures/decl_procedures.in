@@ -1,0 +1,31 @@
+procedure no_ret();
+procedure arguments(integer x, boolean y) returns integer;
+
+procedure no_ret() {
+
+}
+
+procedure ret_no_ret() {
+  return;
+}
+
+procedure arguments(integer x, boolean y) returns integer {
+  return x;
+}
+
+procedure arguments2(const real x, var character y) returns real {
+  return x;
+}
+
+procedure main() returns integer {
+  character a = 'a';
+  integer b = 3;
+  integer c = 1;
+  real d = 1.0;
+  
+  call no_ret();
+  call ret_no_ret();
+  call arguments(c, true);
+  call arguments2(d, a);
+  return 0;
+}

@@ -1,0 +1,43 @@
+procedure main() returns integer {
+  integer[3] vi = [2, 3, 4];
+  real[3] vf = [2.0, 3.0, 4.0];
+  boolean[3] vb = [false, false, true];
+  character[3] vc = ['a', 'b', 'c'];
+
+  integer[2, 2] mi = [[1, 1], [2, 2]];
+  real[2,2] mf = [[1.0, 1.0], [2.0, 2.0]];
+  boolean[2,2] mb = [[false, false], [true, true]];
+  character[2,2] mc = [['a', 'A'], ['b', 'a']];
+
+  // returns vectors
+  integer[*] v1 = vi[1..2];
+  real[*] v2 = vf[[3, 2, 1]];
+  boolean[*] v3 = vb[2..2];
+  character[*] v4 = vc[[3, 2, 1]];
+  integer[*] v5 = mi[1..2, 2];
+  real[*] v6 = mf[[2,1], 2];
+  boolean[*] v7 = mb[1, 1..2];
+  character[*] v8 = mc[1, [2, 1]];
+
+  // returns matrixes
+  integer[*,*] m1 = mi[[1,2], [2,1]];
+  real[*,*] m2 = mf[1..2, [2,1]];
+  boolean[*,*] m3 = mb[1..2, 1..2];
+  character[*,*] m4 = mc[[2, 1], 1..2];
+
+  v1 -> std_output; ' ' -> std_output;
+  v2 -> std_output; ' ' -> std_output;
+  v3 -> std_output; ' ' -> std_output;
+  v4 -> std_output; ' ' -> std_output;
+  v5 -> std_output; ' ' -> std_output;
+  v6 -> std_output; ' ' -> std_output;
+  v7 -> std_output; ' ' -> std_output;
+  v8 -> std_output; '\n' -> std_output;
+
+  m1 -> std_output; ' ' -> std_output;
+  m2 -> std_output; ' ' -> std_output;
+  m3 -> std_output; ' ' -> std_output;
+  m4 -> std_output; '\n' -> std_output;
+
+  return 0;
+}

@@ -1,0 +1,85 @@
+procedure main() returns integer {
+    // vector assignments/index assignments
+    integer[3] i;
+    real[3] f;
+    boolean[3] b;
+    character[3] c;
+    integer[0] e;
+    integer interval iv;
+    string[2] s;
+    // scalar variables
+    integer w;
+    real x;
+    boolean y;
+    character z;
+
+    // null initialization
+    i -> std_output;
+    ' ' -> std_output;
+    f -> std_output;
+    ' ' -> std_output;
+    b -> std_output;
+    ' ' -> std_output;
+    c -> std_output;
+    ' ' -> std_output;
+    e -> std_output;
+    ' ' -> std_output;
+    iv -> std_output;
+    ' ' -> std_output;
+    iv -> std_output;
+    '\n' -> std_output;
+
+    i = [2, 3, 4];
+    f = [2.0, 3.0, 4.0];
+    b = [false, false, true];
+    c = ['a', 'b', 'c'];
+    e = [];
+    iv = 1..5;
+    s = "ee";
+
+    i -> std_output;
+    ' ' -> std_output;
+    f -> std_output;
+    ' ' -> std_output;
+    b -> std_output;
+    ' ' -> std_output;
+    c -> std_output;
+    ' ' -> std_output;
+    e -> std_output;
+    ' ' -> std_output;
+    iv -> std_output;
+    ' ' -> std_output;
+    s -> std_output;
+    '\n' -> std_output;
+
+    i[2] = 1;
+    f[2] = 10.0;
+    b[3] = false;
+    c[2] = 'E';
+
+    i -> std_output;
+    ' ' -> std_output;
+    f -> std_output;
+    ' ' -> std_output;
+    b -> std_output;
+    ' ' -> std_output;
+    c -> std_output;
+    '\n' -> std_output;
+
+    // scalar assignments into vectors
+
+    w = i[1];
+    x = f[1];
+    y = b[1];
+    z = c[1];
+
+    w -> std_output;
+    ' ' -> std_output;
+    x -> std_output;
+    ' ' -> std_output;
+    y -> std_output;
+    ' ' -> std_output;
+    z -> std_output;
+    '\n' -> std_output;
+    return 0;
+}

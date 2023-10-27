@@ -1,0 +1,35 @@
+procedure main() returns integer {
+    real large_negative = -3.4e38;
+    real small_negative = -1.18e-38;
+    real large_positive = 3.4e+38;
+    real small_positive = 1.18e-38;
+    real integer_as_float = 1e1;
+    real zero = 0e10;
+    real no_exponent = 1.33;
+    character new_line = '\n';
+
+    /* testing the output values*/
+
+    large_negative -> std_output;
+    new_line -> std_output;
+
+    small_negative -> std_output;
+    new_line -> std_output;
+
+    large_positive -> std_output;
+    new_line -> std_output;
+
+    small_positive -> std_output;
+    new_line -> std_output;
+
+    integer_as_float -> std_output;
+    new_line -> std_output;
+
+    zero -> std_output;
+    new_line -> std_output;
+
+    no_exponent -> std_output;
+    new_line -> std_output;
+
+    return 0;
+}

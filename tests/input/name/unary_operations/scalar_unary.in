@@ -1,0 +1,27 @@
+procedure main() returns integer {
+    // boolean unary ops
+    boolean b = not true;
+    boolean b2 = not false;
+
+    // real unary ops
+    real f8 = -2.0;
+    real f9 = +2.0;
+    real f10 = +(-2.0) + -(-4.0);
+    
+    // integer unary ops
+    integer i8 = -2;
+    integer i9 = +2;
+    integer i10 = +(-2) + -(-4);
+
+    b -> std_output; ' ' -> std_output;
+    b2 -> std_output; '\n' -> std_output;
+
+    f8 -> std_output; ' ' -> std_output;
+    f9 -> std_output; ' ' -> std_output;
+    f10 -> std_output; ' ' -> std_output;    
+
+    i8 -> std_output; ' ' -> std_output;
+    i9 -> std_output; ' ' -> std_output;
+    i10 -> std_output; ' ' -> std_output;
+    return 0;
+}

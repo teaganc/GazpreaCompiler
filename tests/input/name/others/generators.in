@@ -1,0 +1,10 @@
+procedure main() returns integer {
+  integer[*] v = [i in [1, 2, 3, 4, 5] | i + i];
+  integer[4, 4] m = [i in 1..2, j in 1..3 | (i + 1) * j];
+  integer[*] c = [i in [i in 1..3 | i] | i];
+  
+  v -> std_output;
+  m -> std_output;
+  c -> std_output;
+  return 0;
+}

@@ -1,0 +1,90 @@
+procedure main() returns integer {
+  // vector variables
+  integer[3] vi = [2, 3, 4];
+  real[3] vf = [2.0, 3.0, 4.0];
+  boolean[3] vb = [false, false, true];
+  character[3] vc = ['a', 'b', 'c'];
+  integer[0] ve = [];
+
+  var integer[3] vi2;
+  var real[3] vf2;
+  var boolean[3] vb2;
+  var character[3] vc2;
+
+  var integer[3] vi3;
+  var real[3] vf3;
+  var boolean[3] vb3;
+  var character[3] vc3;
+
+  // matrix variables
+  integer[2, 1] mi = [[1], [2]];
+  real[2,1] mf = [[1.0], [2.0]];
+  boolean[2,1] mb = [[false], [true]];
+  character[2,1] mc = [['a'], ['b']];
+  integer[0, 0] me = [];
+
+  integer[2, 1] mi2;
+  real[2,1] mf2;
+  boolean[2,1] mb2;
+  character[2,1] mc2;
+
+  integer[2, 1] mi3;
+  real[2,1] mf3;
+  boolean[2,1] mb3;
+  character[2,1] mc3;
+
+  vi2 = [null, null, null];
+  vf2 = [null, null, null];
+  vb2 = [null, null, null];
+  vc2 = [null, null, null];
+
+  vi3 = [identity, identity, identity];
+  vf3 = [identity, identity, identity];
+  vb3 = [identity, identity, identity];
+  vc3 = [identity, identity, identity];
+
+  // vector variable printing
+  vi -> std_output;
+  ' ' -> std_output;
+  vf -> std_output;
+  ' ' -> std_output;
+  vb -> std_output;
+  ' ' -> std_output;
+  vc -> std_output;
+  ' ' -> std_output;
+  ve -> std_output;
+  '\n' -> std_output;
+  vi2 -> std_output;
+  ' ' -> std_output;
+  vf2 -> std_output;
+  ' ' -> std_output;
+  vb2 -> std_output;
+  ' ' -> std_output;
+  vc2 -> std_output;
+  '\n' -> std_output;
+  vi3 -> std_output;
+  ' ' -> std_output;
+  vf3 -> std_output;
+  ' ' -> std_output;
+  vb3 -> std_output;
+  ' ' -> std_output;
+  vc3 -> std_output;
+  '\n' -> std_output;
+
+  // matrix variable printing
+  mi -> std_output;
+  ' ' -> std_output;
+  mf -> std_output;
+  ' ' -> std_output;
+  mb -> std_output;
+  ' ' -> std_output;
+  mc -> std_output;
+  ' ' -> std_output;
+  me -> std_output;
+  '\n' -> std_output;
+
+  // vector/matrix index
+  vi[1] -> std_output;
+  mi[1, 1] -> std_output;
+  return 0;
+}

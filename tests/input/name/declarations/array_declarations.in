@@ -1,0 +1,29 @@
+procedure main() returns integer {
+    // vector declaration
+    integer[3] i = [2, 3, 4];
+    real[3] f = [2.0, 3.0, 4.0];
+    boolean[3] b = [false, false, true];
+    character[3] c = ['a', 'b', 'c'];
+    integer[0] e = [];
+
+    // scalar index declaration
+    integer w = i[1];
+    real x = f[1];
+    boolean y = b[1];
+    character z = c[1];
+
+    // matrix declaration/indexing
+    integer[2, 1] mi = [[1], [2]];
+    real[2,1] mf = [[1.0], [2.0]];
+    boolean[2,1] mb = [[false], [true]];
+    character[2,1] mc = [['a'], ['b']];
+    integer[0, 0] me = [];
+    //integer[0, 0] me1 = [[], [], []];
+
+    // scalar matrix declarations
+    integer a1 = mi[1, 1];
+    real b1 = mf[1, 1];
+    boolean c1 = mb[1, 1];
+    character d1 = mc[1, 1];
+    return 0;
+}

@@ -1,0 +1,12 @@
+procedure main() returns integer {
+  integer n = 0;
+
+  loop {
+    n -> std_output; '\n' -> std_output;
+    n = n + 1;
+
+    if n == 10 break;
+  }
+
+  return 0;
+}

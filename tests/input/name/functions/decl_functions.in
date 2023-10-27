@@ -1,0 +1,31 @@
+function func() returns character;
+function arguments(integer x, boolean y) returns integer;
+
+function func1() returns character = 'A';
+
+function func() returns character {
+  return 'B';
+}
+
+function arguments(integer x, boolean y) returns integer {
+  return x;
+}
+
+function arguments2(real x, character y) returns real {
+  return x;
+}
+
+function argument(real x) returns real {
+  return x + x;
+}
+
+procedure main() returns integer {
+  real x = arguments(3, false) + arguments2(5.0, 'b');
+  x -> std_output;
+  func() -> std_output;
+  func1() -> std_output;
+  argument(1.0) -> std_output;
+  argument(1.0) -> std_output;
+  argument(2.0) -> std_output;
+  return 0;
+}

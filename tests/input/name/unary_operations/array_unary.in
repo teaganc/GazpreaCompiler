@@ -1,0 +1,42 @@
+procedure main() returns integer {
+    // vector unary
+    boolean[2] a = not [true, false];
+
+    real[2] b = -[2.0, 2.0];
+    real[2] c = +[2.0, 2.0];
+    real[2] d = +(-[2.0, 2.0]) + -(-[4.0, 4.0]);
+    
+    integer[2] e = -[2, 2];
+    integer[2] f = +[2, 2];
+    integer[2] g = +(-[2, 2]) + -(-[4, 4]);
+
+    // matrix unary
+    boolean[2, 1] h = not [[true], [false]];
+
+    real[2, 1] j = -[[2.0], [2.0]];
+    real[2, 1] k = +[[2.0], [2.0]];
+    real[2, 1] l = +(-[[2.0], [2.0]]) + -(-[[4.0], [4.0]]);
+    
+    integer[2, 1] m = -[[2], [2]];
+    integer[2, 1] n = +[[2], [2]];
+    integer[2, 1] o = +(-[[2], [2]]) + -(-[[4], [4]]);
+
+    // vectors
+    a -> std_output; '\n' -> std_output;
+    b -> std_output; ' ' -> std_output;
+    c -> std_output; ' ' -> std_output;
+    d -> std_output; '\n' -> std_output;
+    e -> std_output; ' ' -> std_output;    
+    f -> std_output; ' ' -> std_output;
+    g -> std_output; '\n' -> std_output;
+
+    // matrix
+    h -> std_output; '\n' -> std_output;
+    j -> std_output; ' ' -> std_output;
+    k -> std_output; ' ' -> std_output;
+    l -> std_output; '\n' -> std_output;    
+    m -> std_output; ' ' -> std_output;
+    n -> std_output; ' ' -> std_output;
+    o -> std_output; '\n' -> std_output;
+    return 0;
+}

@@ -1,0 +1,13 @@
+// this should work global scope
+
+/* 
+    this should also work
+*/
+
+procedure main() returns integer {
+    // Single line 
+    /*
+        Multiline comment
+    */
+  return 0;
+}

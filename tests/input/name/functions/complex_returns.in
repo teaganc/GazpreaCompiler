@@ -1,0 +1,28 @@
+//function test() returns real[*] {
+//  return [1.0, 2.0];
+//}
+
+//function test1(integer[*] x) returns integer {
+//  return x[1];
+//}
+
+//function test2(tuple(integer, real) e) returns real {
+//  return e.2;
+//}
+
+//function test3(tuple(integer, integer) a) returns tuple(integer, integer) {
+//  return a;
+//}
+
+
+procedure main() returns integer {
+  integer[*] v = [1, 2];
+  tuple(integer, real) testing = (1, 2.0);
+  tuple(integer, integer) wow = (3, 2);
+
+  //test() -> std_output;
+  //test1(v) -> std_output;
+  //test2(testing) -> std_output;
+  //test3(wow) -> std_output;
+  return 0;
+}

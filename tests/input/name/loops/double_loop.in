@@ -1,0 +1,21 @@
+procedure main() returns integer {
+
+  /* Prints a 3x3 square of x's */
+  integer x = 0;
+  integer y = 0;
+
+  loop while y < 3 {
+    y = y + 1;
+
+    loop while x < 3 {
+      x = x + 1;
+      'x' -> std_output;
+    }
+    
+    x = 0;
+
+    '\n' -> std_output;
+  }
+  
+  return 0;
+}

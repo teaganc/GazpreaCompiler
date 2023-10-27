@@ -1,0 +1,56 @@
+procedure main() returns integer {
+    // scalar literals
+    2 -> std_output;
+    ' ' -> std_output;
+    'a' -> std_output;
+    ' ' -> std_output;
+    1.0 -> std_output;
+    ' ' -> std_output;
+    true -> std_output;
+    ' ' -> std_output;
+    null -> std_output;
+    ' ' -> std_output;
+    identity -> std_output;
+    '\n' -> std_output;
+    
+    // vector literals
+    [2, 3] -> std_output;
+    ' ' -> std_output;
+    [3] -> std_output;
+    ' ' -> std_output;
+    [2.0, 3.0] -> std_output;
+    ' ' -> std_output;
+    [2.0] -> std_output;
+    ' ' -> std_output;
+    [true, false] -> std_output;
+    ' ' -> std_output;
+    [true] -> std_output;
+    ' ' -> std_output;
+    ['c', 'e'] -> std_output;
+    ' ' -> std_output;
+    ['e'] -> std_output;
+    ' ' -> std_output;
+    1..5 -> std_output;
+    ' ' -> std_output;
+    "twofor" -> std_output;
+    '\n' -> std_output;
+
+    // matrix literals;
+    [[2], [3]] -> std_output;
+    ' ' -> std_output;
+    [[3]] -> std_output;
+    ' ' -> std_output;
+    [[2.0], [3.0]] -> std_output;
+    ' ' -> std_output;
+    [[2.0]] -> std_output;
+    ' ' -> std_output;
+    [[true], [false]] -> std_output;
+    ' ' -> std_output;
+    [[true]] -> std_output;
+    ' ' -> std_output;
+    [['c'], ['e']] -> std_output;
+    ' ' -> std_output;
+    [['e']] -> std_output;
+    '\n' -> std_output;
+    return 0;
+}

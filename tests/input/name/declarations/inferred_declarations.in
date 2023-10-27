@@ -1,0 +1,59 @@
+procedure main() returns integer {
+  // inferred vector
+  integer[*] i = [1, 2, 3];
+  real[*] f= [1.2, 1.0, 1.3];
+  boolean[*] b = [true, true, false];
+  character[*] c = ['c' , 'c', 'h'];
+  integer[*] e = [];
+
+  // inferred matrices
+  integer[*,*] mi = [[1, 2], [3, 4]];
+  real[*,*] mf= [[1.2, 1.0], [2.1, 4.5]];
+  boolean[*,*] mb = [[true, true], [false, false]];
+  character[*,*] mc = [['c' , 'c'], ['b', 'e']];
+
+  integer[2,*] mi2 = [[1, 2, 3], [3, 4, 5]];
+  real[2,*] mf2= [[1.2, 1.0, 2.0], [2.1, 4.5, 3.0]];
+  boolean[2,*] mb2 = [[true, true, false], [false, false, true]];
+  character[2,*] mc2 = [['c' , 'c', 'c'], ['b', 'e', 'r']];
+
+  integer[*,3] mi3 = [[1, 2, 3], [3, 4, 5]];
+  real[*,3] mf3= [[1.2, 1.0, 2.2], [2.1, 4.5, 2.2]];
+  boolean[*,3] mb3 = [[true, true, false], [false, false, true]];
+  character[*,3] mc3 = [['c' , 'c', 'e'], ['b', 'e', 'e']];
+
+  i -> std_output;
+  ' ' -> std_output;
+  f -> std_output;
+  ' ' -> std_output;
+  b -> std_output;
+  ' ' -> std_output;
+  c -> std_output;
+  '\n' -> std_output;
+
+  mi -> std_output;
+  ' ' -> std_output;
+  mf -> std_output;
+  ' ' -> std_output;
+  mb -> std_output;
+  ' ' -> std_output;
+  mc -> std_output;
+  '\n' -> std_output;
+  mi2 -> std_output;
+  ' ' -> std_output;
+  mf2 -> std_output;
+  ' ' -> std_output;
+  mb2 -> std_output;
+  ' ' -> std_output;
+  mc2 -> std_output;
+  '\n' -> std_output;
+  mi3 -> std_output;
+  ' ' -> std_output;
+  mf3 -> std_output;
+  ' ' -> std_output;
+  mb3 -> std_output;
+  ' ' -> std_output;
+  mc3 -> std_output;
+  '\n' -> std_output;
+  return 0;
+}

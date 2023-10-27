@@ -1,0 +1,44 @@
+procedure main() returns integer {
+    var i = as<integer>(1.0);
+    var r = as<real>(1.0);
+
+    integer i2 = as<integer>(1);
+    real r2 = as<real>(1);
+    boolean b2 = as<boolean>(1);
+    character c2 = as<character>(1);
+
+    integer i3 = as<integer>(true);
+    real r3 = as<real>(true);
+    boolean b3 = as<boolean>(true);
+    character c3 = as<character>(true);
+
+    integer i4 = as<integer>('A');
+    real r4 = as<real>('A');
+    boolean b4 = as<boolean>('A');
+    character c4 = as<character>('A');
+
+
+    i -> std_output; ' ' -> std_output;
+    r -> std_output; ' ' -> std_output;
+    '\n' -> std_output;
+
+    i2 -> std_output; ' ' -> std_output;
+    r2 -> std_output; ' ' -> std_output;
+    b2 -> std_output; ' ' -> std_output;
+    c2 -> std_output; ' ' -> std_output;
+    '\n' -> std_output;
+
+    i3 -> std_output; ' ' -> std_output;
+    r3 -> std_output; ' ' -> std_output;
+    b3 -> std_output; ' ' -> std_output;
+    c3 -> std_output; ' ' -> std_output;
+    '\n' -> std_output;
+
+    i4 -> std_output; ' ' -> std_output;
+    r4 -> std_output; ' ' -> std_output;
+    b4 -> std_output; ' ' -> std_output;
+    c4 -> std_output; ' ' -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}

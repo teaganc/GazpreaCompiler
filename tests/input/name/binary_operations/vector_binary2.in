@@ -1,0 +1,57 @@
+procedure main() returns integer {
+    // interval operations
+    integer interval v = 1..5 + 1..5;
+    integer interval v2 = 2..5 - 1..2;
+    integer interval v3 = 2..5 * 1..2;
+    boolean v4 = 2..5 == 1..2;
+    boolean v5 = 2..5 != 1..2;
+    integer[*] v6 = 1..10 by 3;
+
+    // string operations
+    string[*] s = "eeeeee" || "aaaaa";
+    string[*] s2 = "eeeeee" || ['a', 'b', 'a'];
+    string[*] s3 = "eeeeee" || 'a';
+
+    // vector only operations
+    integer i19 = [1, 2, 3] ** [1, 2, 3];
+    integer[6] i20 = [1, 2, 3] || [1, 1, 1];
+    integer[*] i21 = [1, 2, 3, 4, 5] by 2;
+
+    real f19 = [1.0, 2.0, 3.0] ** [1.0, 2.0, 3.0];
+    real[6] f20 = [1.0, 2.0, 3.0] || [1.0, 1.0, 1.0];
+    real[6] f21 = [1.0, 2.0, 3.0] || [1, 1, 1];
+    real[*] f22 = [1.0, 2.0, 3.0, 4.0, 5.0] by 2;
+
+    boolean[6] b6 = [false, false, false] || [true, true, true];
+    boolean[*] b7 = [false, false, false, true, true] by 2;
+
+    character[6] c = ['a', 'b', 'e'] || ['e', 'd', 'a'];
+    character[*] c1 = ['a', 'e', 'i', 'o', 'u'] by 2;
+
+    v -> std_output; ' ' -> std_output;
+    v2 -> std_output; ' ' -> std_output;
+    v3 -> std_output; ' ' -> std_output;
+    v4 -> std_output; ' ' -> std_output;
+    v5 -> std_output; ' ' -> std_output;
+    v6 -> std_output; '\n' -> std_output;
+
+    s -> std_output; ' ' -> std_output;
+    s2 -> std_output; ' ' -> std_output;
+    s3 -> std_output; '\n' -> std_output;
+
+    i19 -> std_output; ' ' -> std_output;
+    i20 -> std_output; ' ' -> std_output;
+    i21 -> std_output; '\n' -> std_output;
+
+    f19 -> std_output; ' ' -> std_output;
+    f20 -> std_output; ' ' -> std_output;
+    f21 -> std_output; ' ' -> std_output;
+    f22 -> std_output; '\n' -> std_output;
+
+    b6 -> std_output; ' ' -> std_output;
+    b7 -> std_output; '\n' -> std_output;
+
+    c -> std_output; ' ' -> std_output;
+    c1 -> std_output; '\n' -> std_output;    
+    return 0;
+}

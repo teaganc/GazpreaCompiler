@@ -1,0 +1,19 @@
+procedure main() returns integer {
+  integer[3] a = [3, 2, 1];
+  integer interval b = 1..5;
+  integer val = 1;
+
+  loop v in [1.2, 2.3, 3.0] {
+    v -> std_output;
+  }
+  '\n' -> std_output;
+  loop j in [5, 7, 13] {
+    j -> std_output;
+  }
+
+  loop i in a, j in b {
+    val -> std_output;
+    val = val + 1;
+  }
+  return 0;
+}

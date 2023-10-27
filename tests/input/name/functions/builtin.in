@@ -1,0 +1,32 @@
+procedure main() returns integer {
+  integer[3] i = [2, 3, 4];
+  real[3] f = [2.0, 3.0, 4.0];
+  boolean[3] b = [false, false, true];
+  character[3] c = ['a', 'b', 'c'];
+
+  integer[2, 1] mi = [[1], [2]];
+  real[2,1] mf = [[1.0], [2.0]];
+  boolean[2,1] mb = [[false], [true]];
+  character[2,1] mc = [['a'], ['b']];
+
+  length(i) -> std_output; ' ' -> std_output;
+  length(f) -> std_output; ' ' -> std_output;
+  length(b) -> std_output; ' ' -> std_output;
+  length(c) -> std_output; '\n' -> std_output;
+
+  rows(mi) -> std_output; ' ' -> std_output;
+  rows(mf) -> std_output; ' ' -> std_output;
+  rows(mb) -> std_output; ' ' -> std_output;
+  rows(mc) -> std_output; '\n' -> std_output;
+
+  columns(mi) -> std_output; ' ' -> std_output;
+  columns(mf) -> std_output; ' ' -> std_output;
+  columns(mb) -> std_output; ' ' -> std_output;
+  columns(mc) -> std_output; '\n' -> std_output;
+
+  reverse(i) -> std_output; ' ' -> std_output;
+  reverse(f) -> std_output; ' ' -> std_output;
+  reverse(b) -> std_output; ' ' -> std_output;
+  reverse(c) -> std_output; '\n' -> std_output;
+  return 0;
+}

@@ -1,0 +1,78 @@
+procedure main() returns integer {
+    // integer binary ops
+    integer i = 1 + 1;
+    integer i2 = i - 1;
+    integer i3 = i2 * 3;
+    integer i4 = 3 / 1;
+    integer i5 = 10 % 6;
+    integer i6 = 10 ^ 1;
+    integer i7 = 10 * (1 + 2);
+
+    boolean i11 = 2 < 1;
+    boolean i12 = 2 > 1;
+    boolean i13 = 2 <= 1;
+    boolean i14 = 2 >= 1;
+    boolean i15 = 2 == 1;
+    boolean i16 = 2 != 1;
+
+    // real binary ops
+    real f = 1.0 + 1.0;
+    real f2 = f - 1.0;
+    real f3 = f2 * 3.0;
+    real f4 = 3.0 / 1.0;
+    real f5 = 10.0 % 6.0;
+    real f6 = 10.0 ^ 1.0;
+    real f7 = 10.0 * (1.0 + 2.0);
+
+    boolean f11 = 2.0 < 1.0;
+    boolean f12 = 2.0 > 1.0;
+    boolean f13 = 2.0 <= 1.0;
+    boolean f14 = 2.0 >= 1.0;
+    boolean f15 = 2.0 == 1.0;
+    boolean f16 = 2.0 != 1.0;
+
+    // boolean operations
+    boolean b = true or false;
+    boolean b2 = true xor false;
+    boolean b3 = true == false;
+    boolean b4 = true != false;
+    boolean b5 = true == (true == true);
+    boolean b6 = true and false;
+
+    i -> std_output; ' ' -> std_output;
+    i2 -> std_output; ' ' -> std_output;
+    i3 -> std_output; ' ' -> std_output;
+    i4 -> std_output; ' ' -> std_output;
+    i5 -> std_output; ' ' -> std_output;
+    i6 -> std_output; ' ' -> std_output;
+    i7 -> std_output; ' ' -> std_output;
+    i11 -> std_output; ' ' -> std_output;
+    i12 -> std_output; ' ' -> std_output;
+    i13 -> std_output; ' ' -> std_output;
+    i14 -> std_output; ' ' -> std_output;
+    i15 -> std_output; ' ' -> std_output;
+    i16 -> std_output; '\n' -> std_output;
+
+    f -> std_output; ' ' -> std_output;
+    f2 -> std_output; ' ' -> std_output;
+    f3 -> std_output; ' ' -> std_output;
+    f4 -> std_output; ' ' -> std_output;
+    f5 -> std_output; ' ' -> std_output;
+    f6 -> std_output; ' ' -> std_output;
+    f7 -> std_output; ' ' -> std_output;
+    f11 -> std_output; ' ' -> std_output;
+    f12 -> std_output; ' ' -> std_output;
+    f13 -> std_output; ' ' -> std_output;
+    f14 -> std_output; ' ' -> std_output;
+    f15 -> std_output; ' ' -> std_output;
+    f16 -> std_output; '\n' -> std_output;
+
+    b -> std_output; ' ' -> std_output;
+    b2 -> std_output; ' ' -> std_output;
+    b3 -> std_output; ' ' -> std_output;
+    b4 -> std_output; ' ' -> std_output;
+    b5 -> std_output; ' ' -> std_output;
+    b6 -> std_output; '\n' -> std_output;
+
+    return 0;
+}

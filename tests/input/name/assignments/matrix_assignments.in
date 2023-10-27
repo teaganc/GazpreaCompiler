@@ -1,0 +1,70 @@
+procedure main() returns integer {
+    // matrix assignments/indexing
+    integer[2, 1] mi;
+    real[2,1] mf;
+    boolean[2,1] mb;
+    character[2,1] mc;
+    // scalar variables
+    integer w;
+    real x;
+    boolean y;
+    character z;
+
+    mi = [[1], [2]];
+    mf = [[1.0], [2.0]];
+    mb = [[false], [true]];
+    mc = [['a'], ['b']];
+
+    mi -> std_output;
+    ' ' -> std_output;
+    mf -> std_output;
+    ' ' -> std_output;
+    mb -> std_output;
+    ' ' -> std_output;
+    mc -> std_output;
+    '\n' -> std_output;
+
+    mi = [[3], [4]];
+    mf = [[3.0], [4.0]];
+    mb = [[true], [false]];
+    mc = [['A'], ['G']];
+
+    mi -> std_output;
+    ' ' -> std_output;
+    mf -> std_output;
+    ' ' -> std_output;
+    mb -> std_output;
+    ' ' -> std_output;
+    mc -> std_output;
+    '\n' -> std_output;
+
+    // scalar matrix assignments
+    mi[1, 1] = 2;
+    mf[1, 1] = 10.0;
+    mb[1, 1] = true;
+    mc[1, 1] = 'A';
+
+    mi -> std_output;
+    ' ' -> std_output;
+    mf -> std_output;
+    ' ' -> std_output;
+    mb -> std_output;
+    ' ' -> std_output;
+    mc -> std_output;
+    '\n' -> std_output;
+
+    w = mi[2,1];
+    x = mf[2,1];
+    y = mb[2,1];
+    z = mc[2,1];
+
+    w -> std_output;
+    ' ' -> std_output;
+    x -> std_output;
+    ' ' -> std_output;
+    y -> std_output;
+    ' ' -> std_output;
+    z -> std_output;
+    '\n' -> std_output;
+    return 0;
+}

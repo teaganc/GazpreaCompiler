@@ -1,0 +1,18 @@
+procedure main() returns integer {
+    integer i;
+    real f;
+    boolean b;
+    character c;
+
+    i = 2;
+    f = 7.0;
+    b = true;
+    c = 'B';
+
+    i = 1;
+    f = 10.0;
+    b = false;
+    c = 'E';
+
+    return 0;
+}

@@ -1,0 +1,80 @@
+procedure main() returns integer {
+    // no type or qualifier
+    integer i = 0;
+    real f = 1.2;
+    boolean b = true;
+    character c = 'r';
+
+    // var qualifier
+    var integer i2 = 0;
+    var real f2 = 1.2;
+    var boolean b2 = true;
+    var character c2 = 'r';
+
+    // const qualifier
+    const integer i3 = 0;
+    const real f3 = 1.2;
+    const boolean b3 = true;
+    const character c3 = 'r';
+
+    // var inference
+    var i4 = 0;
+    var f4 = 1.2;
+    var b4 = true;
+    var c4 = 'r';
+
+    // const inference
+    const i5 = 0;
+    const f5 = 1.2;
+    const b5 = true;
+    const c5 = 'r';
+
+    // no init value (inits a null equivalent)
+    integer i6;
+    real f6;
+    boolean b6;
+    character c6;
+
+    // real init values
+    real ff = .0;
+    real ff1 = 1.;
+    real ff2 = 4.2e-1;
+    real ff3 = 4.2e+2;
+    real ff4 = 4.2e2;
+    real ff5 = 42.e+2;
+    real ff6 = .42e-2;
+    real ff7 = 42e2;
+
+
+    real abc = 4.2e+32;
+    abc -> std_output;
+
+    i4 -> std_output; ' ' -> std_output;
+    f4 -> std_output; ' ' -> std_output;
+    b4 -> std_output; ' ' -> std_output;
+    c4 -> std_output; '\n' -> std_output;
+
+
+    i5 -> std_output; ' ' -> std_output;
+    f5 -> std_output; ' ' -> std_output;
+    b5 -> std_output; ' ' -> std_output;
+    c5 -> std_output; '\n' -> std_output;
+
+    i6 -> std_output; ' ' -> std_output;
+    f6 -> std_output; ' ' -> std_output;
+    b6 -> std_output; ' ' -> std_output;
+    c6 -> std_output; '\n' -> std_output;
+
+    ff -> std_output; ' ' -> std_output;
+    ff1 -> std_output; ' ' -> std_output;
+    ff2 -> std_output; ' ' -> std_output;
+    ff3 -> std_output; ' ' -> std_output;
+    ff4 -> std_output; ' ' -> std_output;
+    ff5 -> std_output; ' ' -> std_output;
+    ff6 -> std_output; ' ' -> std_output;
+    ff7 -> std_output; '\n' -> std_output;
+    
+    abc -> std_output; '\n' -> std_output;
+
+    return 0;
+}

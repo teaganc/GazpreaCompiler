@@ -1,0 +1,73 @@
+procedure main() returns integer {
+    // scalar variables
+    integer i;
+    real f;
+    boolean b;
+    character c;
+
+    integer i2 = 4;
+    real f2 = 2.0;
+    boolean b2 = false;
+    character c2 = 'A';
+
+    var integer i4;
+    var real f4;
+    var boolean b4;
+    var character c4;
+
+    var integer i3;
+    var real f3;
+    var boolean b3;
+    var character c3;
+
+    i = 2;
+    f = 7.0;
+    b = true;
+    c = 'B';
+
+    i4 = null;
+    f4 = null;
+    b4 = null;
+    c4 = null;
+    
+    i3 = identity;
+    f3 = identity;
+    b3 = identity;
+    c3 = identity;
+
+    // scalar variable printing
+    i -> std_output;
+    ' ' -> std_output;
+    f -> std_output;
+    ' ' -> std_output;
+    b -> std_output;
+    ' ' -> std_output;
+    c -> std_output;
+    '\n' -> std_output;
+    i2 -> std_output;
+    ' ' -> std_output;
+    f2 -> std_output;
+    ' ' -> std_output;
+    b2 -> std_output;
+    ' ' -> std_output;
+    c2 -> std_output;
+    '\n' -> std_output;
+    i3 -> std_output;
+    ' ' -> std_output;
+    f3 -> std_output;
+    ' ' -> std_output;
+    b3 -> std_output;
+    ' ' -> std_output;
+    c3 -> std_output;
+    '\n' -> std_output;
+    i4 -> std_output;
+    ' ' -> std_output;
+    f4 -> std_output;
+    ' ' -> std_output;
+    b4 -> std_output;
+    ' ' -> std_output;
+    c4 -> std_output;
+    '\n' -> std_output;
+
+    return 0;
+}

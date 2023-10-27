@@ -1,0 +1,94 @@
+#pragma once
+
+enum class Token : unsigned int {
+  // Operators
+  ADD,
+  SUB,
+  NOT,
+  DOT,
+  RANGE,
+  MUL,
+  DIV,
+  MOD,
+  DOT_PROD,
+  BY,
+  LT,
+  GT,
+  LE,
+  GE,
+  EQ,
+  NE,
+  OR,
+  XOR,
+  CAT,
+  AND,
+  EXP,
+
+  ASSIGN,
+  FILTER_EXPR,
+  DOMAIN_EXPR,
+  PROC_CALL,
+  PROC_DECL,
+  PROC_PARAM,
+  INSTREAM,
+  OUTSTREAM,
+  TYPEDEF,
+  TYPECAST,
+  BLOCK,
+  INF_LOOP,
+  PRED_LOOP,
+  POST_PRED_LOOP,
+  ITER_LOOP,
+  IF,
+  IF_ELSE,
+  VAR_DECL,
+  FILE_TOKEN,
+  GENERATOR,
+
+  // Types
+  TYPE,
+  TUPLE_TYPE,
+
+  // Function tokens
+  FUNC_CALL,
+  FUNC_DECL,
+  FUNC_PARAM,
+
+  // Atoms
+  INT_ATOM,
+  BOOLEAN_ATOM,
+  CHAR_ATOM,
+  REAL_ATOM,
+  TUPLE_ATOM,
+  VECT_ATOM,
+  INTERVAL_ATOM,
+  STR_ATOM,
+  MATRIX_ATOM,
+
+  // Other leaf nodes
+  IDENTITY,
+  NULL_TOKEN,
+  BREAK,
+  CONTINUE,
+  RETURN,
+
+  // vector, matrix and tuple indexing
+  ID_TUPLE_INT_INDEX,
+  ID_TUPLE_INT_INDEX_VECTOR,
+  ID_TUPLE_INT_INDEX_MATRIX,
+  ID_TUPLE_ID_INDEX,
+  ID_TUPLE_ID_INDEX_VECTOR,
+  ID_TUPLE_ID_INDEX_MATRIX,
+  ID_MATRIX_INDEX,
+  ID_VECTOR_INDEX,
+  ID_EXPR,
+
+  // Built-ins
+  LENGTH,
+  ROWS,
+  COLUMNS,
+  REVERSE,
+  STREAM_STATE,
+
+  NONE
+};

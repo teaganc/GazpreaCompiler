@@ -1,0 +1,8 @@
+procedure main() returns integer {
+    real r = 1;
+    real r2 = 1 + 1.0;
+
+    r -> std_output; ' ' -> std_output;
+    r2 -> std_output; '\n' -> std_output;
+    return 0;
+}
